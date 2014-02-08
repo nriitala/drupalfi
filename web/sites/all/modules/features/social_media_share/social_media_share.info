@@ -1,0 +1,8 @@
+name = Social media share
+description = Some share feature
+core = 7.x
+package = drupalfi
+version = 7.x-1.0
+project = social_media_share
+dependencies[] = easy_social
+features[features_api][] = api:2
