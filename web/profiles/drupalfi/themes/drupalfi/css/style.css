@@ -157,8 +157,8 @@ div.status {
 #navigation {
   font-size: 1.5em;
   line-height: 1.3em;
-  background: #f1f1f1;
   padding: 5px;
+  text-align: center;
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-top-left-radius: 3px;
@@ -167,6 +167,8 @@ div.status {
   -webkit-border-bottom-left-radius: 3px; }
   #navigation a {
     padding: 0 10px; }
+  #navigation #secondary {
+    font-size: 0.7em; }
 
 * {
   -webkit-box-sizing: border-box;
