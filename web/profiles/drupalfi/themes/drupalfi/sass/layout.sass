@@ -44,13 +44,13 @@
         @include span-columns(4)
   .one-sidebar.sidebar-first &
     // Span this div 7 columns wide.
-    @include span-columns(10)
-    @include shift(2)
+    @include span-columns(9)
+    @include shift(3)
     @if $responsive
       // Same logic for tablets.
       @include media($tablet)
-        @include span-columns(5)
-        @include shift(2)
+        @include span-columns(4)
+        @include shift(3)
       // 100% width for mobile devices.
       @include media($mobile)
         @include span-columns(4)
@@ -71,17 +71,17 @@
         @include shift(0)
 
 #sidebar-first
-  // Span this div 2 columns wide.
-  @include span-columns(2)
-  // Shift it to the left 9 columns to place it in the far left column.
-  @include shift(-9)
+  // Span this div 3 columns wide.
+  @include span-columns(3)
+  // Shift it to the left 8 columns to place it in the far left column.
+  @include shift(-8)
   .sidebar-first &
     @include shift(-12)
   @if $responsive
     // Similar logic for tablets.
     @include media($tablet)
-      @include span-columns(2)
-      @include shift(-6)
+      @include span-columns(3)
+      @include shift(-5)
       .sidebar-first &
         @include shift(-7)
     // 100% width for mobile devices.
