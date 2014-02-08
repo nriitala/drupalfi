@@ -89,6 +89,10 @@
           <?php print render($page['content']) ?>
         </div>
 
+        <div id="content_bottom">
+          <?php print render($page['content_bottom']) ?>
+        </div>
+
         <?php print $feed_icons; ?>
 
     </section> <!-- /content-inner /content -->
