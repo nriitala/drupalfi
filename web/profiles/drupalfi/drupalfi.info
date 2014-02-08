@@ -25,5 +25,6 @@ dependencies[] = views
 dependencies[] = admin_menu
 dependencies[] = context
 dependencies[] = strongarm
+dependencies[] = locale
 dependencies[] = base_feature
 
