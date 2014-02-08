@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Social media share feature.
  */
+
+include_once 'social_media_share.features.inc';
