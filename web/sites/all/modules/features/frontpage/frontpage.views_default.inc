@@ -36,24 +36,25 @@ function frontpage_views_default_views() {
   $handler->display->display_options['fields']['field_liftup_teaser_text']['table'] = 'field_data_field_liftup_teaser_text';
   $handler->display->display_options['fields']['field_liftup_teaser_text']['field'] = 'field_liftup_teaser_text';
   $handler->display->display_options['fields']['field_liftup_teaser_text']['label'] = '';
+  $handler->display->display_options['fields']['field_liftup_teaser_text']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_liftup_teaser_text']['element_class'] = 'title';
   $handler->display->display_options['fields']['field_liftup_teaser_text']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_liftup_teaser_text']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_liftup_teaser_text']['element_default_classes'] = FALSE;
   /* Field: Content: Liftup body */
   $handler->display->display_options['fields']['field_liftup_body']['id'] = 'field_liftup_body';
   $handler->display->display_options['fields']['field_liftup_body']['table'] = 'field_data_field_liftup_body';
   $handler->display->display_options['fields']['field_liftup_body']['field'] = 'field_liftup_body';
   $handler->display->display_options['fields']['field_liftup_body']['label'] = '';
+  $handler->display->display_options['fields']['field_liftup_body']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_liftup_body']['element_class'] = 'body';
   $handler->display->display_options['fields']['field_liftup_body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_liftup_body']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_liftup_body']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Liftup weight (field_liftup_weight) */
   $handler->display->display_options['sorts']['field_liftup_weight_value']['id'] = 'field_liftup_weight_value';
   $handler->display->display_options['sorts']['field_liftup_weight_value']['table'] = 'field_data_field_liftup_weight';
   $handler->display->display_options['sorts']['field_liftup_weight_value']['field'] = 'field_liftup_weight_value';
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
   /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
