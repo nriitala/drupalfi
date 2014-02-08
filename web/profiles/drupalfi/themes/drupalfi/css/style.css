@@ -192,3 +192,29 @@ div.status {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+/* Frontpage view */
+.view-frontpage-view .views-row {
+  clear: both;
+  float: left;
+  margin-bottom: 24px;
+  width: 100%; }
+  .view-frontpage-view .views-row h2.title {
+    float: left;
+    line-height: 1.1;
+    padding-right: 48px;
+    text-align: center;
+    width: 40%; }
+    @media screen and (max-width: 768px) {
+      .view-frontpage-view .views-row h2.title {
+        width: 100%;
+        padding-right: 0; } }
+    .view-frontpage-view .views-row h2.title p {
+      margin-bottom: 0; }
+  .view-frontpage-view .views-row .body {
+    float: right;
+    width: 60%; }
+    @media screen and (max-width: 768px) {
+      .view-frontpage-view .views-row .body {
+        text-align: center;
+        width: 100%; } }
