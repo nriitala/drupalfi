@@ -1,7 +1,7 @@
 name = Base feature
 description = Base feature for drupalfi
 core = 7.x
-package = Features
+package = drupalfi
 version = 7.x-1.0
 project = base_feature
 dependencies[] = admin_menu

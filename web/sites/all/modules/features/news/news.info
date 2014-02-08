@@ -1,7 +1,7 @@
 name = News
 description = Feature for news content type
 core = 7.x
-package = Features
+package = drupalfi
 dependencies[] = features
 dependencies[] = text
 features[features_api][] = api:2
