@@ -1,5 +1,5 @@
-name = Basic
-description = HTML5, SASS, Responsive grid base theme.
+name = Drupal.fi
+description = HTML5, SASS, Responsive grid theme
 screenshot = images/screenshot.gif
 core = "7.x"
 project = "basic"
@@ -16,14 +16,15 @@ regions[footer] = Footer
 regions[page_bottom] = Page bottom
 
 features[] = logo
-features[] = name
-features[] = slogan
 features[] = node_user_picture
 features[] = comment_user_picture
 features[] = search
 features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
+
+; features[] = name
+; features[] = slogan
 
 ; Stylesheets
 stylesheets[all][] = css/default.css
