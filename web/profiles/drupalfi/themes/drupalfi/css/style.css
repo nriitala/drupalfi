@@ -257,13 +257,14 @@ div.status {
     font-size: 2.2em;
     line-height: 1.1;
     padding-right: 48px;
-    text-align: center;
+    text-align: right;
     width: 30%; }
     @media screen and (max-width: 768px) {
       .view-frontpage-view .views-row h2.title {
         font-size: 2.6em;
         width: 100%;
-        padding-right: 0; }
+        padding-right: 0;
+        text-align: center; }
         .view-frontpage-view .views-row h2.title br {
           display: none; } }
     .view-frontpage-view .views-row h2.title p {
