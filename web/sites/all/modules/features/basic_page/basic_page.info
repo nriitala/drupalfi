@@ -1,0 +1,12 @@
+name = Basic page
+description = Feature for static pages
+core = 7.x
+package = drupalfi
+version = 7.x-1.0
+project = basic_page
+dependencies[] = features
+dependencies[] = news
+dependencies[] = text
+features[features_api][] = api:2
+features[field_instance][] = node-basic_page-body
+features[node][] = basic_page
