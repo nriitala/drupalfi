@@ -236,6 +236,15 @@ div.status {
   #main {
     margin: 0 10px; } }
 
+footer {
+  width: 100%;
+  max-width: 1200px;
+  font-size: 11px; }
+  footer .footer-left {
+    text-align: center; }
+  footer .footer-right {
+    float: right; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
