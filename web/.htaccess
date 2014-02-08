@@ -56,6 +56,19 @@ DirectoryIndex index.php index.html index.htm
 <IfModule mod_rewrite.c>
   RewriteEngine on
 
+  # Vanhojen sivujen uudelleenohjaus
+  RewriteRule ^fi/drupal-suomi$ / [R=301,L]
+  RewriteRule ^fi/keskustelu / [R=301,L]
+  RewriteRule ^fi/kayttajan-opas / [R=301,L]
+  RewriteRule ^fi/suomennos$ / [R=301,L]
+  RewriteRule ^fi/kotoistus/ / [R=301,L]
+  # Drupal-sivustolista / caset.
+  RewriteRule ^fi/drupal-suomessa/suomalaiset-drupal-saitit$ / [R=301,L]
+  RewriteRule ^fi/node/181$ / [R=301,L]
+  # Yhteisö, yhdistys.
+  RewriteRule ^fi/drupal-suomessa / [R=301,L]
+  RewriteRule ^fi/sisalto/liittymislomake$ / [R=301,L]
+
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
   # you don't bounce between http and https.
