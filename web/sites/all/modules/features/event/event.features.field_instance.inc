@@ -10,56 +10,12 @@
 function event_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-event-body'
-  $field_instances['node-event-body'] = array(
-    'bundle' => 'event',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
-    'settings' => array(
-      'display_summary' => TRUE,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => -4,
-    ),
-  );
-
-  // Exported field_instance: 'node-event-field_address'
-  $field_instances['node-event-field_address'] = array(
+  // Exported field_instance: 'node-event-field_event_address'
+  $field_instances['node-event-field_event_address'] = array(
     'bundle' => 'event',
     'default_value' => array(
       0 => array(
-        'element_key' => 'node|event|field_address|und|0',
+        'element_key' => 'node|event|field_event_address|und|0',
         'thoroughfare' => '',
         'premise' => '',
         'postal_code' => '',
@@ -80,7 +36,7 @@ function event_field_default_field_instances() {
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -90,7 +46,7 @@ function event_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_address',
+    'field_name' => 'field_event_address',
     'label' => 'Address',
     'required' => 0,
     'settings' => array(
@@ -110,12 +66,54 @@ function event_field_default_field_instances() {
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => -2,
+      'weight' => -3,
     ),
   );
 
-  // Exported field_instance: 'node-event-field_date'
-  $field_instances['node-event-field_date'] = array(
+  // Exported field_instance: 'node-event-field_event_body'
+  $field_instances['node-event-field_event_body'] = array(
+    'bundle' => 'event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_event_body',
+    'label' => 'event_body',
+    'required' => 0,
+    'settings' => array(
+      'display_summary' => 0,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => -4,
+    ),
+  );
+
+  // Exported field_instance: 'node-event-field_event_date'
+  $field_instances['node-event-field_event_date'] = array(
     'bundle' => 'event',
     'deleted' => 0,
     'description' => '',
@@ -131,7 +129,7 @@ function event_field_default_field_instances() {
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -141,7 +139,7 @@ function event_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_date',
+    'field_name' => 'field_event_date',
     'label' => 'Date',
     'required' => 0,
     'settings' => array(
@@ -163,15 +161,15 @@ function event_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => -3,
+      'weight' => -2,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Address');
-  t('Body');
   t('Date');
+  t('event_body');
 
   return $field_instances;
 }
