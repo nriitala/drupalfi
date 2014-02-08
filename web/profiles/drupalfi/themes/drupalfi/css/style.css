@@ -27,6 +27,21 @@ a:hover, a:active {
   padding: 0 0 0.5em 0.4em;
   margin: 0;
   line-height: 2.3em; }
+  @media screen and (max-width: 768px) {
+    #site-name {
+      font-size: 3em;
+      line-height: 2.5em; } }
+  @media screen and (max-width: 480px) {
+    #site-name {
+      font-size: 2em;
+      line-height: 3em; } }
+
+@media screen and (max-width: 768px) {
+  #logo img {
+    width: 90px; } }
+@media screen and (max-width: 480px) {
+  #logo img {
+    width: 70px; } }
 
 #header {
   display: table;
@@ -187,6 +202,10 @@ div.status {
     padding: 0 10px; }
   #navigation #secondary {
     font-size: 0.7em; }
+
+@media screen and (max-width: 1200px) {
+  #main {
+    margin: 0 10px; } }
 
 * {
   -webkit-box-sizing: border-box;

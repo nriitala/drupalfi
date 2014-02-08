@@ -25,7 +25,20 @@ a
   padding: 0 0 0.5em 0.4em
   margin: 0
   line-height: 2.3em
- 
+  @include media($tablet)
+    font-size: 3em
+    line-height: 2.5em
+  @include media($mobile)
+    font-size: 2em
+    line-height: 3em
+
+#logo
+  img
+    @include media($tablet)
+      width: 90px
+    @include media($mobile)
+      width: 70px
+
 #header
   display: table
   margin: 20px auto
@@ -182,6 +195,10 @@ div.status
     padding: 0 10px
   #secondary
     font-size: 0.7em
+
+#main
+  @include media($desktop)
+    margin: 0 10px
 
 // Import custom styles.
 @import _custom.sass
