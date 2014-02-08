@@ -203,6 +203,23 @@ div.status {
   #navigation #secondary {
     font-size: 0.7em; }
 
+#content_bottom .block {
+  background: #fafafa;
+  display: inline-block;
+  width: 32%; }
+  #content_bottom .block .block-inner {
+    /* TODO */
+    min-height: 250px;
+    padding: 15px 25px; }
+#content_bottom .block-views ul {
+  padding: 0; }
+#content_bottom .block-views li {
+  list-style: none;
+  margin: 0; }
+#content_bottom .block-views .views-field-created,
+#content_bottom .block-views .views-field-field-event-date {
+  font-size: 0.8em; }
+
 @media screen and (max-width: 1200px) {
   #main {
     margin: 0 10px; } }
