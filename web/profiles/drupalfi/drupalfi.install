@@ -12,8 +12,8 @@
  * @see system_install()
  */
 function drupalfi_install() {
+  _drupalfi_set_up_theme();
   // Enable some standard blocks.
-  variable_set('theme_default', 'drupalfi');
   $default_theme = variable_get('theme_default', 'drupalfi');
   $values = array(
     array(
@@ -57,4 +57,14 @@ function drupalfi_install() {
   // Enable default permissions for system roles.
   user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
+}
+
+/**
+ * Set the default theme.
+ */
+function _drupalfi_set_up_theme() {
+  $theme = 'drupalfi';
+  theme_enable(array($theme));
+  variable_set('theme_default', $theme);
+  theme_disable(array('responsive_bartik', 'bartik'));
 }
