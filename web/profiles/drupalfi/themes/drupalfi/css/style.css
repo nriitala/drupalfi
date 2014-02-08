@@ -8,7 +8,8 @@ body {
   margin: 0;
   /* Setting up font size, leading and font family
    * http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography */
-  font: 16px/1.5em "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; }
+  font: 16px/1.5em "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  border-top: 5px solid #003580; }
 
 /* Links */
 a:link, a:visited {

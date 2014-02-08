@@ -15,7 +15,7 @@ if (theme_get_setting('clear_registry')) {
 
 // Add Zen Tabs styles
 if (theme_get_setting('drupalfi_tabs')) {
-  drupal_add_css( drupal_get_path('theme', 'basic') .'/css/tabs.css');
+  drupal_add_css( drupal_get_path('theme', 'drupalfi') .'/css/tabs.css');
 }
 
 function drupalfi_preprocess_html(&$vars) {
