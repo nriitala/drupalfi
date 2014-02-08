@@ -36,7 +36,7 @@ function frontpage_views_default_views() {
   $handler->display->display_options['fields']['field_liftup_teaser_text']['table'] = 'field_data_field_liftup_teaser_text';
   $handler->display->display_options['fields']['field_liftup_teaser_text']['field'] = 'field_liftup_teaser_text';
   $handler->display->display_options['fields']['field_liftup_teaser_text']['label'] = '';
-  $handler->display->display_options['fields']['field_liftup_teaser_text']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_liftup_teaser_text']['element_type'] = 'h2';
   $handler->display->display_options['fields']['field_liftup_teaser_text']['element_class'] = 'title';
   $handler->display->display_options['fields']['field_liftup_teaser_text']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_liftup_teaser_text']['element_wrapper_type'] = '0';
