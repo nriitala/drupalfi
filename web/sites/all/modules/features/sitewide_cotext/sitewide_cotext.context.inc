@@ -16,7 +16,13 @@ function sitewide_cotext_context_default_contexts() {
   $context->name = 'sitewide';
   $context->description = 'Sitewide context';
   $context->tag = '';
-  $context->conditions = array();
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '~<front>' => '~<front>',
+      ),
+    ),
+  );
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
