@@ -199,12 +199,21 @@ div.status
 #content_bottom
   .block
     background: #fafafa
-    display: inline-block
+    float: left
     width: 32%
+    margin-bottom: 20px
+    @include media($tablet)
+      width: 49%
+    @include media($mobile)
+      width: 100%
     .block-inner
       /* TODO
       min-height: 250px
       padding: 15px 25px
+  #block-views-news-block
+    margin-right: 2%
+    @include media($mobile)
+      margin-right: 0
   .block-views
     ul
       padding: 0
@@ -240,12 +249,13 @@ div.status
     font-size: 2.2em
     line-height: 1.1
     padding-right: 48px
-    text-align: center
+    text-align: right
     width: 30%
     @include media($tablet)
       font-size: 2.6em
       width: 100%
       padding-right: 0
+      text-align: center
       br
         display: none
     p
