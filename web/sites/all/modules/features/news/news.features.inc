@@ -9,8 +9,8 @@
  */
 function news_node_info() {
   $items = array(
-    'uutiset' => array(
-      'name' => t('Uutiset'),
+    'news' => array(
+      'name' => t('News'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
