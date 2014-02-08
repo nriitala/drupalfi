@@ -22,8 +22,8 @@ features[] = search
 features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
+features[] = name
 
-; features[] = name
 ; features[] = slogan
 
 ; Stylesheets

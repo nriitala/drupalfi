@@ -16,16 +16,25 @@ a:link, a:visited {
   text-decoration: none; }
 
 a:hover, a:active {
-  color: red;
   text-decoration: underline; }
 
 /* Titles. */
 #site-name {
-  font-size: 2.2em;
+  font-size: 4em;
+  font-family: "Lato";
   line-height: 1.3em;
   font-weight: 300;
-  padding: 0 0 0.5em;
-  margin: 0; }
+  padding: 0 0 0.5em 0.4em;
+  margin: 0;
+  line-height: 2.3em; }
+
+#header {
+  display: table;
+  margin: 20px auto; }
+
+#name-and-slogan {
+  display: inline-block;
+  vertical-align: top; }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3em;
@@ -62,6 +71,10 @@ h6 {
 /* Paragraph styles. */
 p {
   margin: 0 0 1em 0; }
+
+/* Images */
+img {
+  max-width: 100%; }
 
 /* List styles. */
 ul, ol {

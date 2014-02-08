@@ -3,6 +3,7 @@
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <meta name="viewport" content="width=device-width">
