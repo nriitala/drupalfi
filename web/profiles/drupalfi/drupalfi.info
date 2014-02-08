@@ -3,7 +3,6 @@ description = Custom drupal.fi installation profile
 version = VERSION
 core = 7.x
 dependencies[] = block
-dependencies[] = color
 dependencies[] = comment
 dependencies[] = contextual
 dependencies[] = dashboard
@@ -25,5 +24,6 @@ dependencies[] = features
 dependencies[] = views
 dependencies[] = admin_menu
 dependencies[] = context
-dependencies[] = base_feature
 dependencies[] = strongarm
+dependencies[] = base_feature
+

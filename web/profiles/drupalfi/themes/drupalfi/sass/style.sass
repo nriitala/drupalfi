@@ -233,3 +233,38 @@ div.status
 
 // If you want to use the SCSS syntax, use this.
 @import _custom.scss
+
+/* Frontpage view
+.view-frontpage-view .views-row
+  clear: both
+  float: left
+  margin-bottom: 1.4em
+  width: 100%
+  &:last-child
+    border-bottom: none
+  @include media($tablet)
+    border-bottom: 1px solid #eee
+  h2.title
+    float: left
+    font-size: 2.2em
+    line-height: 1.1
+    padding-right: 48px
+    text-align: center
+    width: 30%
+    @include media($tablet)
+      font-size: 2.6em
+      width: 100%
+      padding-right: 0
+      br
+        display: none
+    p
+      margin-bottom: 0 
+  .body
+    float: right
+    line-height: 1.4
+    width: 70%
+    p:last-child
+      margin-bottom: 1.4em
+    @include media($tablet) 
+      text-align: center
+      width: 100%
