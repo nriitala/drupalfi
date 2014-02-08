@@ -216,23 +216,35 @@ div.status {
 .view-frontpage-view .views-row {
   clear: both;
   float: left;
-  margin-bottom: 24px;
+  margin-bottom: 1.4em;
   width: 100%; }
+  .view-frontpage-view .views-row:last-child {
+    border-bottom: none; }
+  @media screen and (max-width: 768px) {
+    .view-frontpage-view .views-row {
+      border-bottom: 1px solid #eeeeee; } }
   .view-frontpage-view .views-row h2.title {
     float: left;
+    font-size: 2.2em;
     line-height: 1.1;
     padding-right: 48px;
     text-align: center;
-    width: 40%; }
+    width: 30%; }
     @media screen and (max-width: 768px) {
       .view-frontpage-view .views-row h2.title {
+        font-size: 2.6em;
         width: 100%;
-        padding-right: 0; } }
+        padding-right: 0; }
+        .view-frontpage-view .views-row h2.title br {
+          display: none; } }
     .view-frontpage-view .views-row h2.title p {
       margin-bottom: 0; }
   .view-frontpage-view .views-row .body {
     float: right;
-    width: 60%; }
+    line-height: 1.4;
+    width: 70%; }
+    .view-frontpage-view .views-row .body p:last-child {
+      margin-bottom: 1.4em; }
     @media screen and (max-width: 768px) {
       .view-frontpage-view .views-row .body {
         text-align: center;
