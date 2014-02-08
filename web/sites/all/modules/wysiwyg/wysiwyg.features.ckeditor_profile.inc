@@ -131,7 +131,9 @@ function wysiwyg_ckeditor_profile_defaults() {
           ),
         ),
       ),
-      'input_formats' => array(),
+      'input_formats' => array(
+        'wysiwyg_profile' => 'Wysiwyg profile',
+      ),
     ),
   );
   return $data;
