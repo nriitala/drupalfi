@@ -46,7 +46,7 @@ function event_views_default_views() {
   $handler->display->display_options['fields']['field_event_date']['label'] = '';
   $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_date']['settings'] = array(
-    'format_type' => 'short',
+    'format_type' => 'drupalfi_date_formats_date_only',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',

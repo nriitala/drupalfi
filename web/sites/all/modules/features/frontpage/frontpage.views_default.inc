@@ -67,6 +67,13 @@ function frontpage_views_default_views() {
   $handler->display->display_options['filters']['status_1']['table'] = 'node';
   $handler->display->display_options['filters']['status_1']['field'] = 'status';
   $handler->display->display_options['filters']['status_1']['value'] = '0';
+  /* Filter criterion: Content: Published (field_published) */
+  $handler->display->display_options['filters']['field_published_value']['id'] = 'field_published_value';
+  $handler->display->display_options['filters']['field_published_value']['table'] = 'field_data_field_published';
+  $handler->display->display_options['filters']['field_published_value']['field'] = 'field_published_value';
+  $handler->display->display_options['filters']['field_published_value']['value'] = array(
+    1 => '1',
+  );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');

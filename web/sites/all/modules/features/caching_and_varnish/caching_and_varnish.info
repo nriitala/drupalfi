@@ -1,7 +1,7 @@
 name = Caching and Varnish
 description = Caching related configuration
 core = 7.x
-package = Features
+package = drupalfi
 version = 7.x-1.1
 project = caching_and_varnish
 dependencies[] = ctools

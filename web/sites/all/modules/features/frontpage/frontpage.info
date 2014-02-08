@@ -4,6 +4,7 @@ package = drupalfi
 version = 7.x-1.0
 project = frontpage
 dependencies[] = context
+dependencies[] = liftup
 dependencies[] = strongarm
 dependencies[] = views
 features[context][] = frontpage
