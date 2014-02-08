@@ -241,7 +241,7 @@ footer {
   max-width: 1200px;
   font-size: 11px; }
   footer .footer-left {
-    float: left; }
+    text-align: center; }
   footer .footer-right {
     float: right; }
 

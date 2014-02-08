@@ -1,7 +1,7 @@
 name = Footer block variables
 core = 7.x
 package = drupalfi
-version = 7.x-1.0
+version = 7.x-1.1
 project = footer_block_variables
 dependencies[] = ctools
 dependencies[] = strongarm
