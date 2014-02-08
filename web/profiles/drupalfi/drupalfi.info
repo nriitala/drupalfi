@@ -24,3 +24,5 @@ dependencies[] = rdf
 dependencies[] = features
 dependencies[] = views
 dependencies[] = admin_menu
+dependencies[] = strongarm
+dependencies[] = base_feature
