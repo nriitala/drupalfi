@@ -23,7 +23,18 @@ function frontpage_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'drupalfi_footer_block-drupalfi_footer_block' => array(
+          'module' => 'drupalfi_footer_block',
+          'delta' => 'drupalfi_footer_block',
+          'region' => 'footer',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 0;
 
   // Translatables
