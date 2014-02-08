@@ -23,7 +23,24 @@ function frontpage_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-news-block' => array(
+          'module' => 'views',
+          'delta' => 'news-block',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+        'views-events-block' => array(
+          'module' => 'views',
+          'delta' => 'events-block',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 0;
 
   // Translatables
