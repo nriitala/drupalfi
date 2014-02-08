@@ -28,7 +28,8 @@ a:hover, a:active {
   margin: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.3em; }
+  line-height: 1.3em;
+  color: #003580; }
 
 h1 {
   font-size: 2.2em;
