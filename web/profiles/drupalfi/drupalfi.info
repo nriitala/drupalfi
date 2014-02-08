@@ -23,3 +23,6 @@ dependencies[] = overlay
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
+dependencies[] = features
+dependencies[] = views
+dependencies[] = admin_menu
