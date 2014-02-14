@@ -273,6 +273,12 @@ div.status {
     color: white; }
     .view-frontpage-view .views-row.views-row-even h2.title {
       color: white; }
+    .view-frontpage-view .views-row.views-row-even a {
+      background: white;
+      margin: 0 3px;
+      padding: 0 10px;
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 10px; }
   .view-frontpage-view .views-row h2.title {
     font-size: 2.36em;
     line-height: 1.1;
@@ -290,7 +296,7 @@ div.status {
       margin-bottom: 0; }
   .view-frontpage-view .views-row .body {
     text-align: center;
-    line-height: 1.4; }
+    line-height: 1.6; }
     .view-frontpage-view .views-row .body p:last-child {
       margin-bottom: 1.4em; }
     @media screen and (max-width: 768px) {
