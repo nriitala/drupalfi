@@ -11,7 +11,7 @@
   5. Sideabr Right
 
 /* Layout rules. (Disclaimer: do not change if you're not sure you know what you're doing.)
-#page
+.wrapper
   @include outer-container
   margin-left: auto
   margin-right: auto
@@ -20,6 +20,18 @@
   @if $responsive
     @include media(max-width $max-width)
       width: auto
+.front
+  #main
+    .wrapper
+      width: 100%
+      max-width: 100%
+    .view
+      .wrapper
+        width: $max-width 
+        max-width: $max-width
+        @if $responsive
+          @include media(max-width $max-width)
+            width: auto
 
 #content
   .no-sidebars &

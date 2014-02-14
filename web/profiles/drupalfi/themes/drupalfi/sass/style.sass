@@ -4,13 +4,13 @@ body
   margin: 0
   /* Setting up font size, leading and font family
     http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography
-  font: 16px / 1.5em $font-stack
-  border-top: 5px solid $blue
+  font: 22px / 1.5em $font-stack
+  font-weight: 300
 
 /* Links
 a
   &:link, &:visited
-    color: $turqoise
+    color: $blue
     text-decoration: none
 
 a
@@ -34,19 +34,13 @@ a
     line-height: 3em
 
 #logo
-  img
-    @include media($tablet)
-      width: 90px
-    @include media($mobile)
-      width: 70px
+  @include media($desktop)
+    margin: 0 20px
+  @include media($tablet)
+    text-align: center
 
 #header
-  display: table
-  margin: 20px auto
-  a
-    color: $blue
-  a:hover
-    text-decoration: none
+  margin: 30px auto
 
 #name-and-slogan
   display: inline-block
@@ -138,6 +132,9 @@ ol
     ol
       list-style-type: decimal
 
+b, strong
+  font-weight: 500
+
 /* Abbreviation.
 abbr
   border-bottom: 1px dotted #666666
@@ -186,20 +183,36 @@ div.status
   border-color: #bbee77
 
 #navigation
-  font-size: 1.5em
   line-height: 1.3em
-  padding: 5px
-  text-align: center
+  background: $blue
   @include border-radius(3px, 3px)
   li
   a
-    padding: 0 10px
+    display: inline-block
+    padding: 10px
+    color: $white
   #secondary
     font-size: 0.7em
 
-#content_bottom
+#content-bottom
+  background: url('../images/footer.jpg') repeat-x center center fixed
+  background-size: cover
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  padding: 50px 0
+  color: $white
+  font-size: 14px
+  h2
+    color: $white
+    font-size: 1.14em
+    text-transform: uppercase
+    font-weight: 500
+  .views-field-title
+    font-size: 1.85em
+  .views-row
+    border-bottom: 1px solid $white
   .block
-    background: #fafafa
     float: left
     width: 32%
     margin-bottom: 20px
@@ -230,41 +243,32 @@ div.status
     font-size: 0.8em
   .field-name-field-news-body
     margin: 1em 0 2em 0
-  @include media($desktop)
-    margin: 0 10px
 
-footer
+#footer
   width: 100%
   max-width: 1200px
-  font-size: 11px
+  font-size: 0.7em
   .footer-left
     text-align: center
   .footer-right
     float: right
 
-// Import custom styles.
-@import _custom.sass
-
-// If you want to use the SCSS syntax, use this.
-@import _custom.scss
-
 /* Frontpage view
 .view-frontpage-view .views-row
   clear: both
   float: left
-  margin-bottom: 1.4em
   width: 100%
-  &:last-child
-    border-bottom: none
-  @include media($tablet)
-    border-bottom: 1px solid #eee
+  padding: 80px 10px
+  &.views-row-even
+    background: $blue
+    color: $white
+    h2.title
+      color: $white
   h2.title
-    float: left
-    font-size: 2.2em
+    font-size: 2.36em
     line-height: 1.1
-    padding-right: 48px
-    text-align: right
-    width: 30%
+    font-weight: 300
+    text-align: center
     @include media($tablet)
       font-size: 2.6em
       width: 100%
@@ -275,11 +279,17 @@ footer
     p
       margin-bottom: 0 
   .body
-    float: right
+    text-align: center
     line-height: 1.4
-    width: 70%
     p:last-child
       margin-bottom: 1.4em
     @include media($tablet) 
       text-align: center
       width: 100%
+
+// Import custom styles.
+@import _custom.sass
+
+// If you want to use the SCSS syntax, use this.
+@import _custom.scss
+

@@ -1,34 +1,13 @@
-<div id="page" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<!-- ______________________ HEADER _______________________ -->
 
-  <!-- ______________________ HEADER _______________________ -->
-
-  <header id="header">
+<header id="header">
+  <div class="wrapper">
 
     <?php if ($logo): ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
-      </a>
-    <?php endif; ?>
-
-    <?php if ($site_name || $site_slogan): ?>
-      <div id="name-and-slogan">
-
-        <?php if ($site_name): ?>
-          <?php if ($title): ?>
-            <div id="site-name">
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
-            </div>
-          <?php else: /* Use h1 when the content title is empty */ ?>
-            <h1 id="site-name">
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
-            </h1>
-          <?php endif; ?>
-        <?php endif; ?>
-
-        <?php if ($site_slogan): ?>
-          <div id="site-slogan"><?php print $site_slogan; ?></div>
-        <?php endif; ?>
-
+      <div id="logo">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+        </a>
       </div>
     <?php endif; ?>
 
@@ -38,27 +17,29 @@
       </div>
     <?php endif; ?>
 
-  </header> <!-- /header -->
+  </div>
+</header> <!-- /header -->
 
-  <?php if ($main_menu || $secondary_menu): ?>
-    <nav id="navigation" class="menu <?php if (!empty($main_menu)) {print "with-primary";}
-      if (!empty($secondary_menu)) {print " with-secondary";} ?>">
+<?php if ($main_menu): ?>
+  <nav id="navigation" class="menu">
+    <div class="wrapper">
       <?php print theme('links', array('links' => $main_menu, 'attributes' => array('id' => 'primary', 'class' => array('links', 'clearfix', 'main-menu')))); ?>
-      <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary', 'class' => array('links', 'clearfix', 'sub-menu')))); ?>
-    </nav> <!-- /navigation -->
-  <?php endif; ?>
+    </div>
+  </nav> <!-- /navigation -->
+<?php endif; ?>
 
-
-  <!-- ______________________ MAIN _______________________ -->
-
-  <div id="main" class="clearfix">
+<!-- ______________________ MAIN _______________________ -->
+<div id="main" class="clearfix">
+  <div class="wrapper">
 
     <section id="content">
 
         <?php if ($breadcrumb || $title|| $messages || $tabs || $action_links): ?>
           <div id="content-header">
 
-            <?php print $breadcrumb; ?>
+            <?php if (!drupal_is_front_page()): ?>
+              <?php print $breadcrumb; ?>
+            <?php endif; ?>
 
             <?php if ($page['highlighted']): ?>
               <div id="highlighted"><?php print render($page['highlighted']) ?></div>
@@ -66,7 +47,7 @@
 
             <?php print render($title_prefix); ?>
 
-            <?php if ($title): ?>
+            <?php if ($title && !drupal_is_front_page()): ?>
               <h1 class="title"><?php print $title; ?></h1>
             <?php endif; ?>
 
@@ -85,13 +66,7 @@
           </div> <!-- /#content-header -->
         <?php endif; ?>
 
-        <div id="content-area">
-          <?php print render($page['content']) ?>
-        </div>
-
-        <div id="content_bottom">
-          <?php print render($page['content_bottom']) ?>
-        </div>
+        <?php print render($page['content']) ?>
 
         <?php print $feed_icons; ?>
 
@@ -109,14 +84,22 @@
       </aside>
     <?php endif; ?> <!-- /sidebar-second -->
 
-  </div> <!-- /main -->
+  </div>
+</div> <!-- /main -->
+<?php if ($page['content_bottom']): ?>
+  <div id="content-bottom">
+    <div class="wrapper">
+      <?php print render($page['content_bottom']); ?>
+    </div> <!-- /content-bottom -->
+  </div> <!-- /wrapper -->
+<?php endif; ?>
 
-  <!-- ______________________ FOOTER _______________________ -->
+<!-- ______________________ FOOTER _______________________ -->
 
-  <?php if ($page['footer']): ?>
-    <footer id="footer">
-      <?php print render($page['footer']); ?>
-    </footer> <!-- /footer -->
-  <?php endif; ?>
-
-</div> <!-- /page -->
+<?php if ($page['footer']): ?>
+  <footer id="footer">
+    <div class="wrapper">
+        <?php print render($page['footer']); ?>
+    </div>
+  </footer> <!-- /footer -->
+<?php endif; ?>

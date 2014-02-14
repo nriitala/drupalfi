@@ -13,7 +13,7 @@
  * 4. Sidebar Left
  * 5. Sideabr Right */
 /* Layout rules. (Disclaimer: do not change if you're not sure you know what you're doing.) */
-#page {
+.wrapper {
   *zoom: 1;
   max-width: 1200px;
   margin-left: auto;
@@ -21,13 +21,23 @@
   margin-left: auto;
   margin-right: auto;
   width: 1200px; }
-  #page:before, #page:after {
+  .wrapper:before, .wrapper:after {
     content: " ";
     display: table; }
-  #page:after {
+  .wrapper:after {
     clear: both; }
   @media screen and (max-width: 1200px) {
-    #page {
+    .wrapper {
+      width: auto; } }
+
+.front #main .wrapper {
+  width: 100%;
+  max-width: 100%; }
+.front #main .view .wrapper {
+  width: 1200px;
+  max-width: 1200px; }
+  @media screen and (max-width: 1200px) {
+    .front #main .view .wrapper {
       width: auto; } }
 
 .no-sidebars #content {

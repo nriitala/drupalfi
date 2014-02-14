@@ -8,12 +8,12 @@ body {
   margin: 0;
   /* Setting up font size, leading and font family
    * http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography */
-  font: 16px/1.5em "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  border-top: 5px solid #003580; }
+  font: 22px/1.5em "Roboto";
+  font-weight: 300; }
 
 /* Links */
 a:link, a:visited {
-  color: #0094b9;
+  color: #2aa9df;
   text-decoration: none; }
 
 a:hover, a:active {
@@ -37,20 +37,15 @@ a:hover, a:active {
       font-size: 2em;
       line-height: 3em; } }
 
+@media screen and (max-width: 1200px) {
+  #logo {
+    margin: 0 20px; } }
 @media screen and (max-width: 768px) {
-  #logo img {
-    width: 90px; } }
-@media screen and (max-width: 480px) {
-  #logo img {
-    width: 70px; } }
+  #logo {
+    text-align: center; } }
 
 #header {
-  display: table;
-  margin: 20px auto; }
-  #header a {
-    color: #003580; }
-  #header a:hover {
-    text-decoration: none; }
+  margin: 30px auto; }
 
 #name-and-slogan {
   display: inline-block;
@@ -58,7 +53,7 @@ a:hover, a:active {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3em;
-  color: #003580; }
+  color: #2aa9df; }
 
 h1 {
   font-size: 2.2em;
@@ -141,6 +136,9 @@ ol {
     ol ol ol {
       list-style-type: decimal; }
 
+b, strong {
+  font-weight: 500; }
+
 /* Abbreviation. */
 abbr {
   border-bottom: 1px dotted #666666;
@@ -189,10 +187,8 @@ div.status {
   border-color: #bbee77; }
 
 #navigation {
-  font-size: 1.5em;
   line-height: 1.3em;
-  padding: 5px;
-  text-align: center;
+  background: #2aa9df;
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-top-left-radius: 3px;
@@ -200,79 +196,88 @@ div.status {
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-bottom-left-radius: 3px; }
   #navigation a {
-    padding: 0 10px; }
+    display: inline-block;
+    padding: 10px;
+    color: white; }
   #navigation #secondary {
     font-size: 0.7em; }
 
-#content_bottom .block {
-  background: #fafafa;
-  float: left;
-  width: 32%;
-  margin-bottom: 20px; }
-  @media screen and (max-width: 768px) {
-    #content_bottom .block {
-      width: 49%; } }
-  @media screen and (max-width: 480px) {
-    #content_bottom .block {
-      width: 100%; } }
-  #content_bottom .block .block-inner {
-    /* TODO */
-    min-height: 250px;
-    padding: 15px 25px; }
-#content_bottom #block-views-news-block {
-  margin-right: 2%; }
-  @media screen and (max-width: 480px) {
-    #content_bottom #block-views-news-block {
-      margin-right: 0; } }
-#content_bottom .block-views ul {
-  padding: 0; }
-#content_bottom .block-views li {
-  list-style: none;
-  margin: 0; }
-#content_bottom .block-views .views-field-created,
-#content_bottom .block-views .views-field-field-event-date {
-  font-size: 0.8em; }
+#content-bottom {
+  background: url("../images/footer.jpg") repeat-x center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 50px 0;
+  color: white;
+  font-size: 14px; }
+  #content-bottom h2 {
+    color: white;
+    font-size: 1.14em;
+    text-transform: uppercase;
+    font-weight: 500; }
+  #content-bottom .views-field-title {
+    font-size: 1.85em; }
+  #content-bottom .views-row {
+    border-bottom: 1px solid white; }
+  #content-bottom .block {
+    float: left;
+    width: 32%;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      #content-bottom .block {
+        width: 49%; } }
+    @media screen and (max-width: 480px) {
+      #content-bottom .block {
+        width: 100%; } }
+    #content-bottom .block .block-inner {
+      /* TODO */
+      min-height: 250px;
+      padding: 15px 25px; }
+  #content-bottom #block-views-news-block {
+    margin-right: 2%; }
+    @media screen and (max-width: 480px) {
+      #content-bottom #block-views-news-block {
+        margin-right: 0; } }
+  #content-bottom .block-views ul {
+    padding: 0; }
+  #content-bottom .block-views li {
+    list-style: none;
+    margin: 0; }
+  #content-bottom .block-views .views-field-created,
+  #content-bottom .block-views .views-field-field-event-date {
+    font-size: 0.8em; }
 
 #main .submitted {
   font-size: 0.8em; }
 #main .field-name-field-news-body {
   margin: 1em 0 2em 0; }
-@media screen and (max-width: 1200px) {
-  #main {
-    margin: 0 10px; } }
 
-footer {
+#footer {
   width: 100%;
   max-width: 1200px;
-  font-size: 11px; }
-  footer .footer-left {
+  font-size: 0.7em; }
+  #footer .footer-left {
     text-align: center; }
-  footer .footer-right {
+  #footer .footer-right {
     float: right; }
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
 
 /* Frontpage view */
 .view-frontpage-view .views-row {
   clear: both;
   float: left;
-  margin-bottom: 1.4em;
-  width: 100%; }
-  .view-frontpage-view .views-row:last-child {
-    border-bottom: none; }
-  @media screen and (max-width: 768px) {
-    .view-frontpage-view .views-row {
-      border-bottom: 1px solid #eeeeee; } }
+  width: 100%;
+  padding: 80px 10px; }
+  .view-frontpage-view .views-row.views-row-even {
+    background: #2aa9df;
+    color: white; }
+    .view-frontpage-view .views-row.views-row-even h2.title {
+      color: white; }
   .view-frontpage-view .views-row h2.title {
-    float: left;
-    font-size: 2.2em;
+    font-size: 2.36em;
     line-height: 1.1;
-    padding-right: 48px;
-    text-align: right;
-    width: 30%; }
+    font-weight: 300;
+    text-align: center; }
     @media screen and (max-width: 768px) {
       .view-frontpage-view .views-row h2.title {
         font-size: 2.6em;
@@ -284,12 +289,16 @@ footer {
     .view-frontpage-view .views-row h2.title p {
       margin-bottom: 0; }
   .view-frontpage-view .views-row .body {
-    float: right;
-    line-height: 1.4;
-    width: 70%; }
+    text-align: center;
+    line-height: 1.4; }
     .view-frontpage-view .views-row .body p:last-child {
       margin-bottom: 1.4em; }
     @media screen and (max-width: 768px) {
       .view-frontpage-view .views-row .body {
         text-align: center;
         width: 100%; } }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
