@@ -10,6 +10,9 @@ body {
    * http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography */
   font: 22px/1.5em "Roboto";
   font-weight: 300; }
+  @media screen and (max-width: 768px) {
+    body {
+      font: 20px/1.5em "Roboto"; } }
 
 /* Links */
 a:link, a:visited {
@@ -248,10 +251,15 @@ div.status {
   #content-bottom .block-views .views-field-field-event-date {
     font-size: 0.8em; }
 
-#main .submitted {
-  font-size: 0.8em; }
-#main .field-name-field-news-body {
-  margin: 1em 0 2em 0; }
+#main {
+  margin: 20px 0; }
+  #main .submitted {
+    font-size: 0.8em; }
+  #main .field-name-field-news-body {
+    margin: 1em 0 2em 0; }
+
+.front #main {
+  margin: 0; }
 
 #footer {
   width: 100%;
@@ -268,6 +276,9 @@ div.status {
   float: left;
   width: 100%;
   padding: 80px 10px; }
+  @media screen and (max-width: 768px) {
+    .view-frontpage-view .views-row {
+      padding: 40px 10px; } }
   .view-frontpage-view .views-row.views-row-even {
     background: #2aa9df;
     color: white; }

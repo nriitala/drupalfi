@@ -6,6 +6,8 @@ body
     http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography
   font: 22px / 1.5em $font-stack
   font-weight: 300
+  @include media($tablet)
+    font: 20px / 1.5em $font-stack
 
 /* Links
 a
@@ -239,10 +241,14 @@ div.status
       font-size: 0.8em
 
 #main
+  margin: 20px 0
   .submitted
     font-size: 0.8em
   .field-name-field-news-body
     margin: 1em 0 2em 0
+
+.front #main
+  margin: 0
 
 #footer
   width: 100%
@@ -259,6 +265,8 @@ div.status
   float: left
   width: 100%
   padding: 80px 10px
+  @include media($tablet)
+    padding: 40px 10px
   &.views-row-even
     background: $blue
     color: $white
