@@ -27,4 +27,3 @@ dependencies[] = context
 dependencies[] = strongarm
 dependencies[] = locale
 dependencies[] = base_feature
-
